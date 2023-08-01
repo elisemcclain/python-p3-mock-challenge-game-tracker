@@ -61,7 +61,7 @@ build out any helper methods if needed.
 
 ### Initializers and Properties
 
-#### Game
+<!-- #### Game
 
 - `Game __init__(self, title)`
   - `Game` is initialized with a title (string)
@@ -71,9 +71,9 @@ build out any helper methods if needed.
   - Titles must be strings greater than 0 characters
   - If you are using exceptions, uncomment lines 25-26 and 32-33 in
     `testing/game_test.py`.
-    - `raise Exception` if setter fails
+    - `raise Exception` if setter fails -->
 
-#### Player
+<!-- #### Player
 
 - `Player __init__(self, username)`
   - `Player` is initialized with a username (string)
@@ -84,19 +84,19 @@ build out any helper methods if needed.
     inclusive.
   - If you are using exceptions, uncomment lines 25-29 in
     `testing/player_test.py`.
-    - `raise Exception` if setter fails
+    - `raise Exception` if setter fails -->
 
 #### Result
 
-- `Result __init__(self, player, game, score)`
+<!-- - `Result __init__(self, player, game, score)`
   - `Result` is initialized with a `Player` instance, a `Game` instance, and a
-    score (number).
-- `Result property score`
+  score (number). -->
+  <!-- - `Result property score`
   - Returns the score for the `Result` instance
   - Scores must be integers between 1 and 5000, inclusive
     - If you are using exceptions, uncomment lines 20-30 in
-    `testing/result_test.py`.
-    - `raise Exception` if setter fails
+      `testing/result_test.py`.
+    - `raise Exception` if setter fails -->
 
 ### Object Relationship Attributes and Properties
 
@@ -113,26 +113,29 @@ build out any helper methods if needed.
 
 #### Player
 
-- `Player results(self, new_result=None)`
+<!-- - `Player results(self, new_result=None)`
   - Adds new results to instance attribute `player._results` if `new_result`
     exists.
   - Returns a list of `Result` instances associated with the `Player` instance.
-  - _You will need to call this method in `Result.__init__()`._
-- `Player games_played(self)`
-  - Returns a list of `Game` instances played by the `Player` instance.
+  - _You will need to call this method in `Result.__init__()`._ -->
+
+<!-- - `Player games_played(self)`
+  - Returns a list of `Game` instances played by the `Player` instance. -->
 
 #### Game
 
-- `Game results(self, new_result=None)`
+<!-- - `Game results(self, new_result=None)`
   - Adds new results to instance attribute `game._results` if `new_result`
     exists.
-  - Returns a list of `Result` instances associated with the `Game` instance.
-  - _You will need to call this method in `Result.__init__()`._
+  - Returns a list of `Result` instances associated with the `Game` instance. -->
+
+- _You will need to call this method in `Result.__init__()`._
 - `Game players(self, new_player=None)`
-  - Adds new results to instance attribute `player._results` if `new_result`
-    exists.
-  - Returns a list of `Result` instances associated with the `Player` instance.
-  - _You will need to call this method in `Result.__init__()`._
+
+<!-- - Adds new results to instance attribute `player._results` if `new_result`
+  exists.
+- Returns a list of `Result` instances associated with the `Player` instance.
+- _You will need to call this method in `Result.__init__()`._ -->
 
 ### Aggregate and Association Methods
 
